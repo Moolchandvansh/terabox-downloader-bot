@@ -20,4 +20,4 @@ BOT_USERNAME = "Moolchand_Terabox_bot"
 # Force user to join this channel. (make sure you have promoted the bot on this chat.)
 FORCE_LINK = "@OG_MOOLCHAND"
 
-PUBLIC_EARN_API = ""  # https://publicearn.com/api
+PUBLIC_EARN_API = "c1f7b838a13c85018273290b03b2cbf07779d8c1"  # https://publicearn.com/api
