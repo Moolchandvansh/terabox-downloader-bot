@@ -10,7 +10,7 @@ import requests
 from PIL import Image
 from telethon import TelegramClient
 
-from config import BOT_USERNAME, PUBLIC_EARN_API
+from config import BOT_USERNAME, MODIJI_URL_API
 from redis_db import db
 
 
@@ -271,9 +271,9 @@ def generate_shortenedUrl(
     try:
         uid = str(uuid.uuid4())
         data = requests.get(
-            "https://publicearn.com/api",
+            "https://modijiurl.com/api",
             params={
-                "api": PUBLIC_EARN_API,
+                "api": MODIJI_URL_API,
                 "url": f"https://t.me/{BOT_USERNAME}?start=token_{uid}",
                 "alias": uid.split("-", maxsplit=2)[0],
             },
